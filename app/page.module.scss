@@ -1,0 +1,32 @@
+.page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  overflow-x: hidden;
+  min-height: 100dvh;
+  background: var(--background) url('/mobileBg.jpg') top center / 100% 50dvh no-repeat fixed;
+
+  @media (min-width: 601px) {
+    min-height: calc(100vh - var(--height-header));
+    padding-inline: var(--spacing-4xl);
+    padding-block: var(--spacing-2xl);
+    background: none;
+    flex-direction: row;
+    height: auto;
+  }
+}
+
+.infoBlock {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: var(--spacing-lg);
+  height: 36dvh;
+  z-index: var(--z-index-elevated);
+  padding-bottom: calc(3vh + 65px);
+}
+
+.cardBlock {
+  z-index: var(--z-index-elevated);
+  height: var(--height-mobile-card);
+}

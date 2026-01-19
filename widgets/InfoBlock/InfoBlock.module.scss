@@ -1,0 +1,29 @@
+.infoBlock {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+  width: 100%;
+  max-width: 100%;
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
+  font-size: var(--info-title-font-size);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-white);
+}
+
+.description {
+  margin: 0;
+  font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.5;
+  color: var(--info-description-color-light);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}

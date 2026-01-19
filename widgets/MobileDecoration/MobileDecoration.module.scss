@@ -1,0 +1,23 @@
+.mobileCircle {
+  position: absolute;
+  bottom:51dvh;
+  right: -90px;
+  width: 70vw;
+  height: 70vw;
+  background-color: var(--circle-bg-color);
+  border: 4px solid var(--circle-border-color);
+  border-radius: 50%;
+}
+
+.mobileAvatar {
+  position: absolute;
+  bottom: 35px;
+  right:40px;
+
+
+  svg {
+    object-fit: contain;
+    width: 90%;
+    height: 90%;
+  }
+}

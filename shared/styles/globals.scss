@@ -1,0 +1,94 @@
+@use './reset' as *;
+@use 'swiper/css' as *;
+
+:root {
+  /* Colors */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-text-default: #16171b;
+  --color-button-disabled: #dadbe8;
+  --background: var(--color-white);
+  --header-bg: #00000033;
+  --header-border: #ffffff66;
+  --info-description-color: #8f91a1;
+  --color-arrow-disabled: #c0c1d1;
+  --day-chip-border: #e8ebf4;
+  --day-chip-selected-bg: #f7f7fc;
+  --color-selected: #DE3A6B;
+  --circle-border-color: #FFAD32;
+  --circle-bg-color: #AD5707;
+  --info-description-color-light: rgba(255, 255, 255, 0.8);
+  --color-white-16: rgba(255, 255, 255, 0.16);
+
+  /* Typography */
+  --font-size-xs: 12px;
+  --font-size-13: 13px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 22px;
+  --font-size-xl: 28px;
+  --info-title-font-size: 27px;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 20px;
+  --spacing-xl: 24px;
+  --spacing-2xl: 40px;
+  --spacing-3xl: 80px;
+  --spacing-4xl: 135px;
+  --spacing-card-gap: 32px;
+
+  /* Border */
+  --border-width: 1px;
+
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 50%;
+  --radius-pill: 100px;
+
+  /* Z-index */
+  --z-index-base: 0;
+  --z-index-elevated: 1;
+  --z-index-sticky: 2;
+  --z-index-overlay: 10;
+
+  /* Component Sizes */
+  --size-icon: 24px;
+  --size-day-chip: 64px;
+  --size-time-chip-width: 100%;
+  --size-time-chip-height: 45px;
+  --size-avatar: 120px;
+  --height-header: 80px;
+  --height-month-label: 28px;
+  --height-card: 620px;
+  --height-mobile-card: 63.9dvh;
+
+  /* Effects */
+  --blur-backdrop: 20px;
+  --gradient-overlay-width: 80px;
+  --gradient-overlay-offset: 48px;
+  --gradient-overlay-opacity: 0.9;
+
+  /* Layout */
+  --shadow-card: 0 20px 52px 0 #00000040;
+  --card-width: 568px;
+  --card-padding: var(--spacing-2xl) var(--spacing-xl);
+  --info-row-width: 449px;
+}
+
+body {
+  background: var(--background) url('/bg.jpg') center / cover no-repeat fixed;
+  font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
+  color: var(--color-text-default);
+  margin: 0;
+  padding: 0;
+}
