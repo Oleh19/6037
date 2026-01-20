@@ -1,8 +1,6 @@
-'use client';
-
 import React, { ReactNode } from 'react';
 import styles from './InfoBlock.module.scss';
-import { Badge, useBreakpoint } from '../../shared';
+import { Badge } from '../../shared';
 
 type InfoBlockProps = {
   title?: string;
@@ -19,12 +17,6 @@ function InfoBlock({
   badgeIcon,
   className,
 }: InfoBlockProps) {
-  const isMobile = useBreakpoint('mobile', { defaultValue: false });
-
-  if (!isMobile) {
-    return null;
-  }
-
   return (
     <div className={`${styles.infoBlock} ${className || ''}`}>
       <div className={styles.content}>

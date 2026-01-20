@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import {
   HorizontalSwiper,
   formatDateKey,
@@ -65,10 +66,13 @@ function BookingCard({
   return (
     <section className={styles.card}>
       <div className={styles.infoRow}>
-        <img
+        <Image
           className={styles.avatar}
           src={AVATAR_PATH}
           alt="Session"
+          width={120}
+          height={120}
+          priority
         />
         <div className={styles.infoText}>
           <h2 className={`${styles.infoTitle} ${kaiseiTokumin.className}`}>

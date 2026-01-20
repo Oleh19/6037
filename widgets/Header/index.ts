@@ -1,3 +1,3 @@
-import HeaderWrapper from './HeaderWrapper';
+import Header from './Header';
 
-export default HeaderWrapper;
+export default Header;

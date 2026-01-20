@@ -1,11 +1,17 @@
+@use '../../shared/styles/breakpoints' as *;
+
 .siteHeader {
   height: var(--height-header);
   width: 100%;
-  display: flex;
+  display: none;
   align-items: center;
   padding-left: var(--spacing-4xl);
   position: relative;
   border-bottom: var(--border-width) solid var(--header-border);
+
+  @media (min-width: $breakpoint-mobile-min) {
+    display: flex;
+  }
 }
 
 .siteHeader::before {

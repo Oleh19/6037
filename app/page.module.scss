@@ -1,3 +1,5 @@
+@use '../shared/styles/breakpoints' as *;
+
 .page {
   display: flex;
   justify-content: center;
@@ -7,7 +9,7 @@
   min-height: 100dvh;
   background: var(--background) url('/mobileBg.jpg') top center / 100% 50dvh no-repeat fixed;
 
-  @media (min-width: 601px) {
+  @media (min-width: $breakpoint-mobile-min) {
     min-height: calc(100vh - var(--height-header));
     padding-inline: var(--spacing-4xl);
     padding-block: var(--spacing-2xl);
@@ -24,6 +26,10 @@
   height: 36dvh;
   z-index: var(--z-index-elevated);
   padding-bottom: calc(3vh + 65px);
+
+  @media (min-width: $breakpoint-mobile-min) {
+    display: none;
+  }
 }
 
 .cardBlock {

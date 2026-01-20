@@ -2,7 +2,7 @@ import React from 'react';
 import { Poppins } from 'next/font/google';
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
-import HeaderWrapper from '../widgets';
+import { Header } from '../widgets';
 import '@/shared/styles/globals.scss';
 
 export const metadata: Metadata = {
@@ -25,7 +25,7 @@ function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.variable}>
-        <HeaderWrapper />
+        <Header />
         {children}
       </body>
     </html>
